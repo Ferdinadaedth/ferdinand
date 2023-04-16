@@ -19,13 +19,15 @@ func main() {
 		}
 		length := (n - m) + 1
 		sum := 0
+		s := make([]int, length)
 		for i := 0; i < length; i++ {
-			sum += m + i
+			s[i] = m + i
 		}
-		fmt.Printf("%d ", m)
-		for i := 1; i < length; i++ {
-			fmt.Printf("%d ", m+i)
+		for _, v := range s {
+			fmt.Printf("%d ", v)
+			sum += v
 		}
-		fmt.Printf("sum=%d\n", sum)
+		fmt.Printf("Sum=%d\n", sum)
 	}
 }
+
