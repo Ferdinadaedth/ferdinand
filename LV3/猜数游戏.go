@@ -18,7 +18,7 @@ func main() {
 	reader := bufio.NewReader(os.Stdin)
 	for {
 		data, _, _ := reader.ReadLine()
-    // 输入我们猜的数字
+                // 输入我们猜的数字
 		guess, err := strconv.Atoi(string(data)) //string to int,并作输入格式判断
 		// Go语言中处理错误的方法
 		if err != nil {
